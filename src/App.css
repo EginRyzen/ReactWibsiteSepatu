@@ -135,11 +135,11 @@ body {
     margin: auto;
     border-radius: 20px;
     height: 400px;
-    transition: 0.8;
+    transition: transform 0.3s ease-in-out;
 }
 
 .box-image img:hover {
-    transform: translate(0.8);
+    transform: scale(1.02);
 }
 
 .box-deskripsi {
