@@ -10,7 +10,12 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
-    height: 1000vh;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .main-header {
@@ -105,4 +110,47 @@ body {
 .login-button li a:hover {
     background-color: #fff;
     color: #000;
+}
+
+.main {
+    background-color: #ddd;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 60px 0;
+}
+
+#about {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box-image {
+    width: 40%;
+}
+
+.box-image img {
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+    height: 400px;
+    transition: 0.8;
+}
+
+.box-image img:hover {
+    transform: translate(0.8);
+}
+
+.box-deskripsi {
+    width: 60%;
+    margin: auto 0;
+}
+
+.box-deskripsi h2 {
+    margin-bottom: 20px;
+}
+
+.box-deskripsi p {
+    margin: 10px 0px;
 }
