@@ -7,7 +7,7 @@ export default function NavMenu() {
         </a>
       </li>
       <li className="nav-item">
-        <a href="" className="nav-link">
+        <a href="#about" className="nav-link">
           About
         </a>
       </li>

@@ -154,3 +154,50 @@ body {
 .box-deskripsi p {
     margin: 10px 0px;
 }
+
+#product {
+    margin: 80px 0;
+}
+
+#product h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#product .box-product {
+    display: flex;
+}
+
+#product .box-product .card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    width: 23%;
+}
+
+.card .card-header {
+    border-bottom: 2px solid #3d3d3d;
+    margin: 10px auto 0;
+    width: 90%;
+    overflow: hidden;
+    position: relative;
+}
+
+.card .card-header img {
+    height: 250px;
+    display: block;
+    margin: auto;
+}
+
+.card .card-body {
+    margin: 10px auto 20px;
+    width: 90%;
+    overflow: hidden;
+    position: relative;
+}
+
+.card .card-body p {
+    color: #3d3d3d;
+    font-weight: 600;
+    margin: 10px 0 20px;
+}
