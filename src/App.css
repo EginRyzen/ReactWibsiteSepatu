@@ -53,7 +53,7 @@ body {
 
 .nav-menu {
     display: flex;
-    width: 50%;
+    width: 60%;
     justify-content: space-evenly;
     align-items: center;
 
@@ -92,23 +92,19 @@ body {
 
 .login-button {
     padding: 10px 15px;
-}
-
-.login-button li {
     list-style: none;
 }
 
-.login-button li a {
+.login-button .nav-button {
     text-decoration: none;
-    font-size: 15px;
+    font-size: 18px;
     padding: 10px 18px;
     border: 2px solid #fff;
     border-radius: 10px;
     color: #fff;
 }
 
-.login-button li a:hover {
-    background-color: #fff;
+.login-button .nav-button:hover {
     color: #000;
 }
 
@@ -166,13 +162,20 @@ body {
 
 #product .box-product {
     display: flex;
+    flex-wrap: wrap;
 }
 
 #product .box-product .card {
+    margin: 0 10px 25px;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
     width: 23%;
+    transition: transform 0.3s ease-in-out;
+}
+
+#product .box-product .card:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .card .card-header {
@@ -181,6 +184,19 @@ body {
     width: 90%;
     overflow: hidden;
     position: relative;
+}
+
+.card .card-header .icon-heart {
+    color: #d0d0d0;
+    font-size: 25px;
+    float: right;
+    padding-bottom: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.card .card-header .icon-heart:hover {
+    color: red;
 }
 
 .card .card-header img {

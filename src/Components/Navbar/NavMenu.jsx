@@ -21,6 +21,11 @@ export default function NavMenu() {
           Top Product
         </a>
       </li>
+      <li className="login-button">
+        <a href="" className="nav-button">
+          Login
+        </a>
+      </li>
     </ul>
   );
 }
