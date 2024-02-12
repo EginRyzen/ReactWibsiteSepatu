@@ -162,6 +162,7 @@ body {
 
 #product .box-product {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -188,6 +189,15 @@ body {
 
 .card .card-header .icon-heart {
     color: #d0d0d0;
+    font-size: 25px;
+    float: right;
+    padding-bottom: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.card .card-header .icon-heart.red {
+    color: red;
     font-size: 25px;
     float: right;
     padding-bottom: 10px;
