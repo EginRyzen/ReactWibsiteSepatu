@@ -32,6 +32,9 @@ export default function App() {
                 <div className="card_product">
                   <img src="./img/top_5.png" alt="" />
                 </div>
+                <div className="card_product">
+                  <img src="./img/top_6.png" alt="" />
+                </div>
               </div>
               <div className="box_preview">
                 <img src="./img/top_1.png" alt="" />

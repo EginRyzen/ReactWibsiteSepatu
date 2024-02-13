@@ -250,7 +250,7 @@ body {
 .box_top .box_view .card_product {
     border-radius: 10px;
     height: 100px;
-    width: 75%;
+    width: 80%;
     background-color: #fff;
 }
 
@@ -279,9 +279,10 @@ body {
 
 
 .box_top .box_deskripsi {
+    border-radius: 10px;
     width: 45%;
     height: auto;
-    background-color: #fff;
+    background-color: #fafafa;
     display: flex;
     align-items: center;
 }
