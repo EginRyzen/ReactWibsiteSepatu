@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faTiktok } from "@fortawesome/free-brands-svg-icons";
-import { useState } from "react";
+import TopProduct from "./Components/TopProduct/TopProduct.jsx";
 
 const Card = [
   {
@@ -59,7 +59,7 @@ const Card = [
   },
 ];
 
-const TopProduct = [
+const TopProductItem = [
   {
     id: "1",
     img: "./img/top_1.png",
@@ -87,14 +87,6 @@ const TopProduct = [
 ];
 
 export default function App() {
-  const [topProduct] = useState(TopProduct);
-  const [selectedProduct, setSelectProduct] = useState(topProduct[0]);
-
-  function handleSelectProduct(id) {
-    const newProduct = topProduct.filter((Product) => Product.id === id);
-    setSelectProduct(newProduct[0]);
-  }
-
   return (
     <>
       <div className="main-header">
@@ -103,27 +95,7 @@ export default function App() {
       <div className="main">
         <About />
         <Product Card={Card} />
-        <div className="container">
-          <div id="top_product">
-            <h2>Top Product</h2>
-            <div className="box_top">
-              <BoxView topProduct={topProduct} onSelectedProduct={handleSelectProduct} />
-              <BoxPreview selectedProduct={selectedProduct} />
-              <div className="box_deskripsi">
-                <div className="box_text">
-                  <h3>Nike P-6000</h3>
-                  <h4>The Nike P-6000 draws on the 2006 Nike Air Pegasus, bringing you a mash-up of iconic style thats breathable, comfortable and evocative of that early-2000s vibe.</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, sequi! Nostrum debitis ad a corporis perferendis sapiente minus fuga autem laboriosam atque consequatur, odit sequi ipsam reiciendis labore? Quibusdam nulla
-                    nisi maxime incidunt alias. Velit cum alias, illum voluptas aliquam quisquam delectus reiciendis reprehenderit iste. Minus suscipit id vitae enim accusamus voluptates sint rem maxime, dolores dicta quibusdam officiis
-                    porro ducimus harum ipsam incidunt nostrum quos voluptate? Saepe, itaque tempore. Ab aliquam aperiam officia doloribus tenetur nam adipisci commodi accusamus animi facere, obcaecati natus consequatur maxime voluptas
-                    eveniet odit vero corrupti libero unde quisquam sit iste recusandae cupiditate incidunt! Fuga?
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <TopProduct TopProductItem={TopProductItem} />
         <footer>
           <div className="container">
             <div className="footer">
@@ -166,25 +138,5 @@ export default function App() {
         </footer>
       </div>
     </>
-  );
-}
-
-function BoxView({ topProduct, onSelectedProduct }) {
-  return (
-    <div className="box_view">
-      {topProduct?.map((data) => (
-        <div className="card_product" key={data.id} onClick={() => onSelectedProduct(data.id)}>
-          <img src={data.img} alt="" />
-        </div>
-      ))}
-    </div>
-  );
-}
-
-function BoxPreview({ selectedProduct }) {
-  return (
-    <div className="box_preview">
-      <img src={selectedProduct.img} alt="" />
-    </div>
   );
 }
