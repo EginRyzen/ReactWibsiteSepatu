@@ -248,6 +248,7 @@ body {
 }
 
 .box_top .box_view .card_product {
+    cursor: pointer;
     border-radius: 10px;
     height: 100px;
     width: 80%;
