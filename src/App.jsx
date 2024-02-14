@@ -54,6 +54,25 @@ export default function App() {
             </div>
           </div>
         </div>
+        <footer>
+          <div className="container">
+            <div className="footer">
+              <img src="./img/logo.png" alt="" />
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sequi asperiores similique natus corrupti temporibus accusamus modi eaque, pariatur autem dolor exercitationem ut delectus aspernatur.</p>
+            </div>
+            <div className="footer">
+              <h3>Information</h3>
+              <p className="link">
+                <a href="">About</a>
+              </p>
+              <p className="link">
+                <a href="">Contact</a>
+              </p>
+            </div>
+            <div className="footer"></div>
+          </div>
+          <p className="copyright">Egin Ryzen</p>
+        </footer>
       </div>
     </>
   );
