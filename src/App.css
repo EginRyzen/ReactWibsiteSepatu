@@ -10,6 +10,7 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    background-color: #ddd;
 }
 
 .container {
@@ -22,6 +23,7 @@ body {
     height: 100vh;
     background-image: url(../public/img/background.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .Navbar {
@@ -102,6 +104,10 @@ body {
     border: 2px solid #fff;
     border-radius: 10px;
     color: #fff;
+}
+
+.login_button_mobile {
+    display: none;
 }
 
 .login-button .nav-button:hover {
@@ -423,6 +429,11 @@ footer .copyright {
 
 /* Mobile Resposive */
 @media screen and (max-width:480px) {
+    .main-header {
+        height: 22vh;
+        background-size: contain;
+    }
+
     .nav-menu {
         position: absolute;
         right: 0;
