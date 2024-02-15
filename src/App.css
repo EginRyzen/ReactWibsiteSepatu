@@ -95,7 +95,7 @@ body {
     list-style: none;
 }
 
-.login-button .nav-button {
+.nav-button {
     text-decoration: none;
     font-size: 18px;
     padding: 10px 18px;
@@ -364,4 +364,115 @@ footer .copyright {
     background-color: #6f6f6f;
     color: #fff;
     font-weight: 700;
+}
+
+
+/* Humberger */
+.menu-toggle {
+    left: 0px;
+    /* top: 1px; */
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+    z-index: 3;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    opacity: 0;
+    left: -6px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: #FFF;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked~span:nth-child(2) {
+    transform: rotate(45deg) translate(-1px, -1px);
+    background-color: #FFF;
+}
+
+.menu-toggle input:checked~span:nth-child(3) {
+    transform: scale(0);
+    opacity: 0;
+}
+
+.menu-toggle input:checked~span:nth-child(4) {
+    transform: rotate(-45deg) translate(-1px, 0);
+    background-color: #FFF;
+}
+
+/* Mobile Resposive */
+@media screen and (max-width:480px) {
+    .nav-menu {
+        position: absolute;
+        right: 0;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.5);
+        top: 0;
+        height: auto;
+        margin: 20px 0;
+        align-items: center;
+        justify-content: space-evenly;
+        z-index: 2;
+        transform: translateY(-40%);
+        transition: all 1s;
+        opacity: 0;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .nav-menu .nav-item {
+        padding: 18px 0;
+    }
+
+    .nav-menu .nav-item .nav-link {
+        color: #FFF;
+    }
+
+    .nav-menu.slide {
+        opacity: 1;
+        transform: translateY(-10%);
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .Navbar .logo {
+        width: 50%;
+    }
+
+    .Navbar .logo img {
+        margin-left: 0;
+    }
+
+    .nav-menu .login-button {
+        display: none;
+    }
+
+    .login_button_mobile {
+        padding: 10px 15px;
+        list-style: none;
+    }
+
 }
