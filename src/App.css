@@ -106,10 +106,6 @@ body {
     color: #fff;
 }
 
-.login_button_mobile {
-    display: none;
-}
-
 .login-button .nav-button:hover {
     color: #000;
 }
@@ -478,12 +474,50 @@ footer .copyright {
     }
 
     .nav-menu .login-button {
-        display: none;
+        padding-top: 20px;
     }
 
-    .login_button_mobile {
-        padding: 10px 15px;
-        list-style: none;
+    #about {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .box-image {
+        width: 100%;
+    }
+
+    .box-image img {
+        height: 300px;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .box-deskripsi {
+        width: 100%;
+    }
+
+    .box-deskripsi h2 {
+        margin: 20px 0px;
+    }
+
+    .box-deskripsi p {
+        margin: 10px 0px;
+    }
+
+    #product .box-product {
+        flex-direction: column;
+    }
+
+    #product .box-product .card {
+        margin: 0;
+        margin-bottom: 20px;
+        width: 100%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .card .card-header img {
+        height: 200px;
+        display: block;
+        margin: auto;
     }
 
 }

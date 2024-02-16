@@ -22,11 +22,6 @@ export default function Navbar() {
     <div className="Navbar">
       <NavLogo />
       <Navmenu />
-      <li className="login_button_mobile">
-        <a href="" className="nav-button">
-          Login
-        </a>
-      </li>
       <div className="menu-toggle">
         <input type="checkbox" />
         <span></span>
