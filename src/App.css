@@ -526,42 +526,18 @@ footer .copyright {
 
     .box_top .box_view {
         order: 2;
-        overflow: hidden;
+        overflow-x: scroll;
         width: 100%;
         display: flex;
         flex-direction: row;
         margin-bottom: 20px;
     }
 
-    /* .box_top .box_view .card_product {
-        cursor: pointer;
-        border-radius: 10px;
-        height: 100px;
-        width: 80%;
-        background-color: #fff;
-    } */
-    /* 
-    .box_top .box_view .card_product img {
-        border-radius: 10px;
-        height: 100px;
-        display: block;
-        margin: auto;
-    } */
-
     .box_top .box_preview {
         margin-bottom: 10px;
         order: 1;
         width: 100%;
     }
-
-    /* .box_top .box_preview img {
-        border-radius: 10px;
-        width: 100%;
-        height: auto;
-        display: block;
-        margin: auto;
-    } */
-
 
     .box_top .box_deskripsi {
         padding: 20px 0;
